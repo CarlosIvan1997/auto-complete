@@ -1,6 +1,6 @@
 # Welcome to countries auto-complete
 
-This is an `auto-complete`component developed using `React`, follow the instructions to run the project:
+This is an `auto-complete` component developed using `React`, follow the instructions to run the project:
 
 1. Make sure to install the stable version of `Node.js`: https://nodejs.org/en
 
