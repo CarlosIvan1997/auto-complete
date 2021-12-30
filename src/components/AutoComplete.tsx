@@ -32,24 +32,17 @@ const AutoComplete = ({ options }: { options: Array<string> }) => {
   };
 
   const handleKeyDown = (e: { key: string }) => {
-    // User pressed the enter key
     if (e.key === Key.ENTER) {
       setActiveOptionIndex(0);
       setShowFilteredOptions(false);
       setSearchValue(filteredOptions[activeOptionIndex]);
-    }
-
-    // User pressed the up arrow
-    else if (e.key === Key.ARROW_UP) {
+    } else if (e.key === Key.ARROW_UP) {
       if (activeOptionIndex === 0) {
         return;
       }
 
       setActiveOptionIndex(activeOptionIndex - 1);
-    }
-
-    // User pressed the down arrow
-    else if (e.key === Key.ARROW_DOWN) {
+    } else if (e.key === Key.ARROW_DOWN) {
       if (activeOptionIndex - 1 === filteredOptions.length) {
         return;
       }
